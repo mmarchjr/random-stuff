@@ -1,0 +1,43 @@
+<body>
+<style>
+
+a{
+ color:#FF4081;
+ text-decoration:none;
+ transition:0.5s;
+ text-decoration: none;
+ 
+ display: inline-block;
+ position: relative;
+}
+a:after { 
+ background: none repeat scroll 0 0 transparent;
+ bottom: 0;
+ content: "";
+ display: block;
+ height: 2px;
+ left: 50%;
+ position: absolute;
+ background: #f16f5c; /* Old browsers */
+background: -moz-linear-gradient(top, #f16f5c 3%, #f6290c 69%, #f02f17 88%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f16f5c 3%,#f6290c 69%,#f02f17 88%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f16f5c 3%,#f6290c 69%,#f02f17 88%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f16f5c', endColorstr='#f02f17',GradientType=0 ); /* IE6-9 */;
+ transition: width 0.3s ease 0s, left 0.3s ease 0s;
+ width: 0;
+ 
+}
+a:hover:after { 
+ width: 100%; 
+ left: 0; 
+ 
+}
+a:hover {
+ letter-spacing:0.1em;
+}
+
+
+</style>
+<a href='javascript:(function()%7Bvar%20wpm%20%3D%20parseInt(prompt(%22How%20many%20WPM%20do%20you%20want%20the%20bot%20to%20type%3F%22))%3B%0Aif(isNaN(wpm))%20return%20alert(%22Are%20you%20sure%20you%20entered%20a%20number%3F%20Try%20again%20please.%22)%3B%0Aif(wpm%20%3E%20150)%20if(!confirm(%22Are%20you%20sure%20you%20want%20your%20wpm%20that%20high%3F%20This%20could%20cause%20you%20to%20possibly%20be%20detected%20for%20cheating%20or%20cause%20you%20to%20lag.%22))%20return%20alert(%22Ok%2C%20exiting.%22)%0Aif(wpm%20%3C%3D%200)%20return%20alert(%22Your%20WPM%20cant%20be%20that%20low!%22)%3B%0Avar%20i%20%3D%200%3B%0Avar%20lastIndex%20%3D%20-1%3B%0Avar%20cheat%20%3D%20setInterval(%20()%20%3D%3E%20%7B%0Aif(lastIndex%20!%3D%3D%20core.cur_char_index%20)%20i%2B%2B%0Aif(i%20%3D%3D%20core.text.length%2B1)%20clearInterval(cheat)%3B%0Avar%20wordLength%20%3D%20core.words%5Bcore.cur_word_index%5D.char_list.length%3B%0Acore.bound_keypress_handler(%7Bkey%3A%20core.cur_char.chr%7D)%3B%0A%7D%2C%20(12000)%2Fwpm)%7D)()%3B' class="myThing">Typing Club Cheat</a> <span> &lt-- Drag that to your bookmarks bar. Then to use it, just click on it</span>
+<br>
+<a href='https://r.5a.repl.co'</a>
